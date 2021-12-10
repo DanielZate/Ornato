@@ -133,8 +133,8 @@ public class ControllerUsu extends HttpServlet {
             String nombre=request.getParameter("nombre");
             String apellido=request.getParameter("apellido");
             String tipodoc=request.getParameter("tipodoc");
-            int numdoc=Integer.parseInt(request.getParameter("numdoc"));
-            int telefono=Integer.parseInt(request.getParameter("telefono"));
+            String numdoc=request.getParameter("numdoc");
+            String telefono=request.getParameter("telefono");
             
             
                       
@@ -212,8 +212,8 @@ public class ControllerUsu extends HttpServlet {
             String nombre=request.getParameter("nombre");
             String apellido=request.getParameter("apellido");
             String tipodoc=request.getParameter("tipodoc");
-            int numdoc=Integer.parseInt(request.getParameter("numdoc"));
-            int telefono=Integer.parseInt(request.getParameter("telefono"));
+            String numdoc=request.getParameter("numdoc");
+            String telefono=request.getParameter("telefono");
             
             u.setIdUsuario(id);
             u.setIdRolFk(idRol);
@@ -271,8 +271,8 @@ public class ControllerUsu extends HttpServlet {
            String correo1=request.getParameter("correo");
            String contraseña1=request.getParameter("password");
            String tipodoc1=request.getParameter("tipodoc");
-           int numdoc1=Integer.parseInt(request.getParameter("numdoc"));
-           int telefono1=Integer.parseInt(request.getParameter("telefono"));
+           String numdoc1=request.getParameter("numdoc");
+           String telefono1=request.getParameter("telefono");
            
            
            

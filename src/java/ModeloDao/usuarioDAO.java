@@ -39,8 +39,8 @@ ArrayList<usuario> list=new ArrayList<>();
                 usuario.setNombreUsuario(rs.getString("nombre_usuario"));
                 usuario.setApellidoUsuario(rs.getString("apellido_usuario"));
                 usuario.setTipoDocUsuario(rs.getString("tipo_doc_usuario"));
-                usuario.setNumDocUsuario(rs.getInt("num_doc_usuario"));
-                usuario.setTelefonoUsuario(rs.getInt("telefono_usuario"));
+                usuario.setNumDocUsuario(rs.getString("num_doc_usuario"));
+                usuario.setTelefonoUsuario(rs.getString("telefono_usuario"));
                 
                 list.add(usuario);
                 
@@ -71,8 +71,8 @@ ArrayList<usuario> list=new ArrayList<>();
                 r.setNombreUsuario(rs.getString("nombre_usuario"));
                 r.setApellidoUsuario(rs.getString("apellido_usuario"));
                 r.setTipoDocUsuario(rs.getString("tipo_doc_usuario"));
-                r.setNumDocUsuario(rs.getInt("num_doc_usuario"));
-                r.setTelefonoUsuario(rs.getInt("telefono_usuario"));
+                r.setNumDocUsuario(rs.getString("num_doc_usuario"));
+                r.setTelefonoUsuario(rs.getString("telefono_usuario"));
 
                 
             }
@@ -109,8 +109,8 @@ ArrayList<usuario> list=new ArrayList<>();
             ps.setString(4, u.getCorreoUsuario());
             ps.setString(5, u.getPassword());
             ps.setString(6,u.getTipoDocUsuario());
-            ps.setInt(7, u.getNumDocUsuario());
-            ps.setInt(8, u.getTelefonoUsuario());
+            ps.setString(7, u.getNumDocUsuario());
+            ps.setString(8, u.getTelefonoUsuario());
             ps.executeUpdate();
         }catch(Exception e){}
         return re;

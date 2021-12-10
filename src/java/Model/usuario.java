@@ -16,15 +16,15 @@ public class usuario {
     private String nombreUsuario;
     private String apellidoUsuario;
     private String tipoDocUsuario;
-    private int numDocUsuario;
-    private int telefonoUsuario;
+    private String numDocUsuario;
+    private String telefonoUsuario;
     private String nomRol;
     
 
     public usuario() {       
     }
 
-    public usuario(int idUsuario, int idRolFk, String password, String correoUsuario, String nombreUsuario, String apellidoUsuario, String tipoDocUsuario, int numDocUsuario, int telefonoUsuario) {
+    public usuario(int idUsuario, int idRolFk, String password, String correoUsuario, String nombreUsuario, String apellidoUsuario, String tipoDocUsuario, String numDocUsuario, String telefonoUsuario) {
         this.idUsuario = idUsuario;
         this.idRolFk = idRolFk;
         this.password = password;
@@ -92,21 +92,23 @@ public class usuario {
         this.tipoDocUsuario = tipoDocUsuario;
     }
 
-    public int getNumDocUsuario() {
+    public String getNumDocUsuario() {
         return numDocUsuario;
     }
 
-    public void setNumDocUsuario(int numDocUsuario) {
+    public void setNumDocUsuario(String numDocUsuario) {
         this.numDocUsuario = numDocUsuario;
     }
 
-    public int getTelefonoUsuario() {
+    public String getTelefonoUsuario() {
         return telefonoUsuario;
     }
 
-    public void setTelefonoUsuario(int telefonoUsuario) {
+    public void setTelefonoUsuario(String telefonoUsuario) {
         this.telefonoUsuario = telefonoUsuario;
     }
+
+
 
     public String getNomRol() {
         return nomRol;
