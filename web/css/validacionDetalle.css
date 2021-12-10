@@ -1,0 +1,33 @@
+.msn-error{
+    font-size: 0.9rem;
+    color: red;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.msn-error-visible{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.frm-group-input{
+    position: relative;
+}
+
+.frm-error{
+    background-color: darkred;
+    padding: 1px;
+    visibility: hidden;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    font-size: large;
+}
+
+.frm-error-visible{
+
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease;
+}

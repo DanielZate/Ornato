@@ -1,0 +1,38 @@
+.msn-error{
+    color: red;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.msn-error-visible{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.form-icono{
+    color: red;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.form-icono-visible{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.form-error{
+    background-color: rgb(255, 77, 77);
+    color: black;
+    padding: 5px;
+    visibility: hidden;
+    opacity: 0;
+    font-size: medium ;
+}
+
+.form-error-visible{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
